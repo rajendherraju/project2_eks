@@ -1,0 +1,20 @@
+aws_profile      = "personal-aws"
+region           = "ap-south-1"
+vpc_name         = "devops-stage"
+custom_string    = "devops-digivive"
+subnet_tag       = "subnet_type"
+environment      = "stage"
+ami_id           = "ami-01216e7612243e0ef"
+key_name     = "devops-stage"
+cluster_name = "devops"
+az           = "ap-south-1"
+common_tags = {
+  "owner"     = "mdprawez.musharraf@gmail.com"
+  "env"       = "stage"
+  "terraform" = "true"
+  "project"   = "eks"
+  "purpose"   = "compute"
+}
+min_size  = 1
+max_size = 4
+desired_size = 1
